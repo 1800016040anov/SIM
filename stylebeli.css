@@ -10,7 +10,6 @@ body {
     padding: 0;
         padding-bottom: 0px;
     -webkit-overflow-scrolling: touch;
-    position: absolute;
 }
 
 :after,
@@ -18,10 +17,10 @@ body {
     box-sizing:border-box
    }
   
-.content {
-    box-sizing: border-box;
-    padding: 8px 80px;
+.container {
+    max-width: 1440px;
 }
+
 .delete-header {
     clear: both;
     content: "";
@@ -181,27 +180,6 @@ div.col-sm-5{
     margin-top: 10px;
   }
 
-  
   .footer {
     margin-top: 400px;
-}
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .text {font-size: 11px}
-  }
-    
-  @media screen and (max-width: 810px) {
-  {
-        margin-left: 150px;
-  }
 }
