@@ -29,6 +29,35 @@
   </script>
 
 </head>
+<style>
+.quantity{
+  font-size: 14px;
+    border: 1px solid #e8eaf6;
+    float: right;
+    padding: 10px;
+    
+    border: none;
+        border-bottom-color: currentcolor;
+        border-bottom-style: none;
+        border-bottom-width: medium;
+    border-bottom: 1px solid #b4b4b4;
+    display: inline-flex;
+    text-align: center;
+}
+
+#cart-checkout .checkout-area a {
+    background-color:#E3984E;
+    color: #BE1828;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 5px 5px;
+    border: none;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 20px;
+    height: 40px;
+}
+</style>
 
 <body>
 
@@ -149,14 +178,12 @@
                 <div class="col-sm-6 no-padding sticky-sidebar ng-star-inserted" id="tambah">
                   <!---->
                   <table id="table2">
-                    <tr>
-                      <th><button class="button5"> - </button></th>
-                      <th><input class="summary-qty-material-input ng-untouched ng-pristine ng-valid ng-star-inserted"
-                          gmonlynumber="true">
-                        <!---->
-                      </th>
-                      <th><button class="button4"> + </button></th>
-                    </tr>
+                    <div><div class="def-number-input number-input safari_only mb-0 w-100">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          class="button5">-</button>
+                        <input class="quantity" min="0" name="quantity" value="1" type="number" >
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          class="button4">+</button></div>
                   </table>
                   <!---->
                 </div>
@@ -172,13 +199,13 @@
                     <p class="total">
                       <span class="total-quantity"> Total 1 jumlah produk </span>
                       <span class="total-price">Rp58,650.00 </span></p>
-                    <a class="btn-primary btn" href="generate_code.html"> Lanjutkan Pembayaran </a>
+                    <a class="btn-primary btn" href="checkout.html" > Lanjutkan Pembayaran </a>
                     <!---->
                   </div>
                 </div>
               </div>
             </div>
-    </div>
+    </div>    
   </div>
 
   <!-- Section Footer -->
