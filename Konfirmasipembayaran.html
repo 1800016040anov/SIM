@@ -5,23 +5,27 @@
   <title>konfirmasi</title>
   <style type="text/css">
     .button {
-  background-color:   #DEB887;
-  border: none;
-  color:#8B0000 ;
-  padding: 8px 370px;
-  text-align: left;  
-  font-size: 16px;
-  margin: 2px 2px;
+      background-color: #DEB887;
+      border: none;
+      color: #8B0000;
+      padding: 8px 370px;
+      text-align: left;
+      font-size: 16px;
+      margin: 2px 2px;
 
-}
-.teks1{
-    text-align: left;
-}
+    }
 
-.style1{
-  color:  #8B0000;
-}
-.button3 {width: 100%;}
+    .teks1 {
+      text-align: left;
+    }
+
+    .style1 {
+      color: #8B0000;
+    }
+
+    .button3 {
+      width: 100%;
+    }
   </style>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -64,7 +68,7 @@
 
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-image: url('img/navground.png');">
-    <img src="icon/logo.png" alt="" style="width: 250px;">
+    <a href="index.html"> <img src="icon/logo.png" alt="" style="width: 250px;"> </a>
 
     <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,11 +104,26 @@
         <li>
           <i class="fa-2x fas fa-shopping-cart" style="margin-top: 35px; margin-left: 15px;"></i>
         </li>
+        <li class="nav-item dropdown">
+          <a class="btn dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style=" margin-top: 30px; margin-left: 15px;">
+            <i class="fas fa-bars" style="color: black;"></i>
+          </a>
+          <div class=" dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Logout</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="koleksibuku.html">Koleksi Buku</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="generate_code.html">Generate code</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="FAQ.html">FAQ</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Kebijakan dan privasi</a>
+          </div>
 
-        <li
-          style="background-color: aquamarine; height: 50%; border-radius: 5px;padding-left: 20px; padding-right: 20px; margin-left: 40px; margin-top: 35px;">
-          <a href="">login </a>| <a href="">daftar</a>
+
         </li>
+
       </ul>
 
     </div>
@@ -115,78 +134,89 @@
 
     <!---->
     <div class="col-md-8 no-padding wraping-summary ng-star-inserted" id="cart-container"><br><br>
-          <button class="button button3"><b> Rincian_Pemesanan</b></button><br><br>
-        <table width="700" border="0" cellspacing="0" cellpadding="5" align="margin-left">
- 
+      <button class="button button3"><b> Rincian_Pemesanan</b></button><br><br>
+      <table width="700" border="0" cellspacing="0" cellpadding="5" align="margin-left">
 
 
-<tr>
-<td rowspan="4"><img src="img/steeve.PNG" width="120" height="170"
-            onclick="window.location.href='turnjs4/samples/steve-jobs/index.html'">
-<td><b>Stave Jobs</b><br> isaac walterson</td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td><b>Subtotal</b><br><b><span style="color:#8B0000;font-style:bold;font-weight:bold;">Rp. 50.000</span></b></td>
-</tr>
- 
-<tr>
-  <td><hr color="#DC143C" size="20px"></td>
-  <td><hr color="#DC143C" size="20px"></td>
-  <td><hr color="#DC143C" size="20px"></td>
-  <td><hr color="#DC143C" size="20px"></td>
-  <td><hr color="#DC143C" size="20px"></td>
-</tr>
 
-<tr class="style1">
-<td>No Pemesanan</td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td>20145HHUT001</td>
-</tr>
- 
-<tr class="style1">
-<td>Waktu Pemesanan</td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td>28-11-2020 20:39</td>
-</tr>
- 
-<tr class="style1">
-<td> </td>
-<td>Waktu Pembayaran</td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td>28-11-2020 21:00</td>
-</tr>
- 
-<tr class="style1">
-<td></td>
-<td>Waktu Pengiriman</td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td>30 -11-2020 18:00</td>
-</tr>
+        <tr>
+          <td rowspan="4"><img src="img/steeve.PNG" width="120" height="170"
+              onclick="window.location.href='turnjs4/samples/steve-jobs/index.html'">
+          <td><b>Stave Jobs</b><br> isaac walterson</td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td><b>Subtotal</b><br><b><span style="color:#8B0000;font-style:bold;font-weight:bold;">Rp. 50.000</span></b>
+          </td>
+        </tr>
 
-<tr class="style1">
-<td></td>
-<td>Waktu Pesanan Selesai</td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td>30-11-2020 17:00</td>
-</tr>
+        <tr>
+          <td>
+            <hr color="#DC143C" size="20px">
+          </td>
+          <td>
+            <hr color="#DC143C" size="20px">
+          </td>
+          <td>
+            <hr color="#DC143C" size="20px">
+          </td>
+          <td>
+            <hr color="#DC143C" size="20px">
+          </td>
+          <td>
+            <hr color="#DC143C" size="20px">
+          </td>
+        </tr>
 
-</table>
+        <tr class="style1">
+          <td>No Pemesanan</td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td>20145HHUT001</td>
+        </tr>
 
+        <tr class="style1">
+          <td>Waktu Pemesanan</td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td>28-11-2020 20:39</td>
+        </tr>
+
+        <tr class="style1">
+          <td> </td>
+          <td>Waktu Pembayaran</td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td>28-11-2020 21:00</td>
+        </tr>
+
+        <tr class="style1">
+          <td></td>
+          <td>Waktu Pengiriman</td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td>30 -11-2020 18:00</td>
+        </tr>
+
+        <tr class="style1">
+          <td></td>
+          <td>Waktu Pesanan Selesai</td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td>30-11-2020 17:00</td>
+        </tr>
+
+      </table>
+
+    </div>
   </div>
-  </div>
 
-<!-- Section Footer -->
+  <!-- Section Footer -->
   <div class="footer">
     <div class="container mt-3" style="background-color: rgb(230, 228, 228); padding:10px;">
       <div class="row mt-3 ml-5" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
