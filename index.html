@@ -20,9 +20,13 @@
 
 <body>
 
+
+
+
+
   <!-- section navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-image: url('img/navground.png');">
-    <img src="icon/logo.png" alt="" style="width: 250px;">
+    <a href="index.html"> <img src="icon/logo.png" alt="" style="width: 250px;"> </a>
 
     <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +50,7 @@
           </div>
         </li>
         <li>
-          <form class="form-inline my-2 my-lg-0" autocomplete="on">
+          <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
               style="right: 50%; width: 500px;  margin-top: 30px; border-radius: 35px;">
           </form>
@@ -58,11 +62,26 @@
         <li>
           <i class="fa-2x fas fa-shopping-cart" style="margin-top: 35px; margin-left: 15px;"></i>
         </li>
+        <li class="nav-item dropdown">
+          <a class="btn dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style=" margin-top: 30px; margin-left: 15px;">
+            <i class="fas fa-bars"></i>
+          </a>
+          <div class=" dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Logout</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="koleksibuku.html">Koleksi Buku</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="generate_code.html">Generate code</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="FAQ.html">FAQ</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Kebijakan dan privasi</a>
+          </div>
 
-        <li
-          style="background-color: aquamarine; height: 50%; border-radius: 5px;padding-left: 20px; padding-right: 20px; margin-left: 40px; margin-top: 35px;">
-          <a href="">login </a>| <a href="">daftar</a>
+
         </li>
+
       </ul>
 
     </div>
@@ -235,7 +254,7 @@
           </div>
         </div>
 
-        <button class="btn" type="submit"
+        <button onclick="window.location.href='exclusive-sale.html'" class="btn" type="submit"
           style="margin-left: 50px; margin-bottom: 50px;  background-color: palevioletred; color: blue; font-weight: bold; font-family: 'Times New Roman', Times, serif; border-radius: 20px;">Lihat
           Semua</button>
 

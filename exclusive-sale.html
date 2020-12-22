@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+
+
+  <title>o'book store</title>
+</head>
+
+<style type="text/css">
+.row mt-3 .col-md3 mt-3 button{
+  background-color:#E3984E;
+  color: #BE1828;
+  border: none;
+  font-size: 16px;
+  border-radius: 50px;
+  border: none;
+  width: 100%;
+  margin-left: 5px;
+  height: 40px;
+}
+.container mt-4 {
+  width: 100%;
+  clear: both;
+  content: "";
+  display: table;
+}
+    
+</style>
+
+<body>
+
+  <!-- section navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-image: url('img/navground.png');">
+    <a href="index.html"> <img src="icon/logo.png" alt="" style="width: 250px;"> </a>
+
+    <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="color: aliceblue; margin-top: 30px; margin-left: 15px;">
+            Kategori
+          </a>
+          <div class=" dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Sedih</a>
+            <a class="dropdown-item" href="#">Senang</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Susah</a>
+          </div>
+        </li>
+        <li>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+              style="right: 50%; width: 500px;  margin-top: 30px; border-radius: 35px;">
+          </form>
+        </li>
+
+        <li>
+          <i class="fa-2x far fa-bell" style="margin-top: 35px; margin-left: 15px;"></i>
+        </li>
+        <li>
+          <i class="fa-2x fas fa-shopping-cart" style="margin-top: 35px; margin-left: 15px;"></i>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="btn dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style=" margin-top: 30px; margin-left: 15px;">
+            <i class="fas fa-bars"></i>
+          </a>
+          <div class=" dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Logout</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="koleksibuku.html">Koleksi Buku</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="generate_code.html">Generate code</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="FAQ.html">FAQ</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Kebijakan dan privasi</a>
+          </div>
+
+
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+    <!-- icon flashsahle -->
+    <div class="container mt-5">
+
+      <div class="row">
+        <div class="col-md3">
+          <h3 style="color: rgb(248, 9, 9);"> Exclusive sale</h3>
+        </div>
+
+        <div class="col-md3 ml-3 mt-2 ">
+          <table style="border: 2px solid rgb(107, 32, 32); ">
+            <tr>
+              <th style="border: 1px solid rgb(107, 32, 32); background-color: rgb(85, 45, 196);">
+                <p id="hours" style=" font-size: 14px; color: white; margin: 0%;"></p>
+              </th>
+              <th style="border: 1px solid rgb(107, 32, 32);  background-color:rgb(85, 45, 196);">
+                <p id="minute" style=" font-size: 14px; color: white;  margin: 0%; ">
+                </p>
+              </th>
+              <th style="border: 1px solid rgb(107, 32, 32);  background-color:rgb(85, 45, 196);">
+                <p id="second" style=" font-size: 14px; color: white;  margin: 0%; "></p>
+              </th>
+            </tr>
+          </table>
+
+        </div>
+
+      </div>
+
+      <div class="row mt-3">
+        <button type="button" style="border:none; width: 100%; background-color:#E3984E; color: #BE1828; border-radius: 50px; height: 40px; "> SPECIAL </button>
+        <div class="col-md3 mt-3" style="margin-left: 100px; ">
+          <div class="card" style="width: 150px;">
+            <img src="icon/12.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text" style="font-size: 8px; text-align: center;">Some quick example <br> i'ts oke
+                <br>nevermind
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md3  ml-3" style="margin-top: 150px;">
+          <div class="card" style="width: 150px;">
+            <img src="icon/13.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text" style="font-size: 8px; text-align: center;">Some quick example <br> i'ts oke
+                <br>nevermind
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="detail.html" style="color: black;">
+          <div class="col-md3 mt-3 ml-3">
+            <div class="card" style="width: 150px;">
+              <img src="img/steeve.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text" style="font-size: 8px; text-align: center;">Some quick example <br> i'ts oke
+                  <br>nevermind
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <div class="col-md3  ml-3" style="margin-top: 150px;">
+          <div class="card" style="width: 150px;">
+            <img src="icon/8.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text" style="font-size: 8px; text-align: center;">Some quick example <br> i'ts oke
+                <br>nevermind
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md3 mt-3 ml-3">
+          <div class="card" style="width: 150px;">
+            <img src="icon/5.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text" style="font-size: 8px; text-align: center;">Some quick example <br> i'ts oke
+                <br>nevermind
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md3  ml-3" style="margin-top: 150px;">
+          <div class="card" style="width: 150px;">
+            <img src="icon/7.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text" style="font-size: 8px; text-align: center;">Some quick example <br> i'ts oke
+                <br>nevermind
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Katalog Umum  -->
+
+      <div class="container mt-4">
+
+        <div class="row">
+
+          <div class="col">
+            <button type="button" style="border:none; width: 100%; background-color:#E3984E; color: #BE1828; border-radius: 50px; height: 40px; "> REGULER </button>   
+            <div class="row" style="padding-top: 15px;">
+              <div class="card" style="width: 125px; margin-left: 50px;">
+                <img src="icon/16.PNG" class="card-img-top" alt="...">
+                <div class="col-md3 mt-3 ml-3">
+                <div class="card-body" style="margin: 0%; border: none;">
+                  <p class="card-text"
+                    style="font-size: 8px;  margin: 0px; font-weight: bold; text-decoration: line-through; margin: 0%; text-align: center;">
+                    Harga Rp.100.000 </p>
+                  <p class="card-text"
+                    style="font-size: 8px; margin: 0px; font-weight: bold; color:red; text-align: center;">
+                    Harga
+                    Rp.25.000 </p>
+                  <p class="card-text" style="font-size: 10px; text-align: center; font-weight: bold;  margin: 0px;">
+                    Andromeda</p>
+                  <div class="row" style="margin-left: 5%;" >
+                    <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                    <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                    <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                    <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                    <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                    <div class="col-md1"> <img src="icon/star(1).png" style="width: 10px;" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 125px; margin-left: 50px;">
+              <img src="icon/15.PNG" class="card-img-top" alt="...">
+              <div class="col-md3 mt-3 ml-3">
+              <div class="card-body">
+                <p class="card-text"
+                  style="font-size: 8px;  margin: 0px; font-weight: bold; text-decoration: line-through; margin: 0%; text-align: center;">
+                  Harga
+                  Rp.100.000 </p>
+                <p class="card-text"
+                  style="font-size: 8px; margin: 0px; font-weight: bold; color:red; text-align: center;">
+                  Harga
+                  Rp.25.000 </p>
+                <p class="card-text" style="font-size: 10px; text-align: center; font-weight: bold;  margin: 0px;">
+                  Andromeda</p>
+                <div class="row" style="margin-left: 5%;">
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star(1).png" style="width: 10px;" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 125px; margin-left: 50px;">
+            <img src="icon/21.PNG" class="card-img-top" alt="...">
+            <div class="col-md3 mt-3 ml-3">
+            <div class="card-body">
+              <p class="card-text"
+                style="font-size: 8px;  margin: 0px; font-weight: bold; text-decoration: line-through; margin: 0%; text-align: center;">
+                Harga
+                Rp.100.000 </p>
+              <p class="card-text"
+                style="font-size: 8px; margin: 0px; font-weight: bold; color:red; text-align: center;">
+                Harga
+                Rp.25.000 </p>
+              <p class="card-text" style="font-size: 10px; text-align: center; font-weight: bold;  margin: 0px;">
+                Andromeda</p>
+              <div class="row" style="margin-left: 5%;">
+                <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                <div class="col-md1"> <img src="icon/star(1).png" style="width: 10px;" alt=""></div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="card" style="width: 125px; margin-left: 50px;">
+            <img src="icon/23.PNG" class="card-img-top" alt="...">
+            <div class="col-md3 mt-3 ml-3">
+            <div class="card-body">
+              <p class="card-text"
+                style="font-size: 8px;  margin: 0px; font-weight: bold; text-decoration: line-through; margin: 0%; text-align: center;">
+                Harga
+                Rp.100.000 </p>
+              <p class="card-text"
+                style="font-size: 8px; margin: 0px; font-weight: bold; color:red; text-align: center;">
+                Harga
+                Rp.25.000 </p>
+              <p class="card-text" style="font-size: 10px; text-align: center; font-weight: bold;  margin: 0px;">
+                Andromeda</p>
+              <div class="row" style="margin-left: 5%;">
+                <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                <div class="col-md1"> <img src="icon/star(1).png" style="width: 10px;" alt=""></div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="card" style="width: 125px; margin-left: 50px;">
+            <img src="icon/22.PNG" class="card-img-top" alt="...">
+            <div class="col-md3 mt-3 ml-3">
+            <div class="card-body">
+              <p class="card-text"
+                style="font-size: 8px;  margin: 0px; font-weight: bold; text-decoration: line-through; margin: 0%; text-align: center;">
+                Harga
+                Rp.100.000 </p>
+              <p class="card-text"
+                style="font-size: 8px; margin: 0px; font-weight: bold; color:red; text-align: center;">
+                Harga
+                Rp.25.000 </p>
+              <p class="card-text" style="font-size: 10px; text-align: center; font-weight: bold;  margin: 0px;">
+                Andromeda</p>
+              <div class="row" style="margin-left: 5%;">
+                <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                <div class="col-md1"> <img src="icon/star(1).png" style="width: 10px;" alt=""></div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="card" style="width: 125px; margin-left: 50px;">
+            <img src="icon/3.PNG" class="card-img-top" alt="...">
+            <div class="col-md3 mt-3 ml-3">
+            <div class="card-body">
+              <p class="card-text"
+                style="font-size: 8px;  margin: 0px; font-weight: bold; text-decoration: line-through; margin: 0%; text-align: center;">
+                Harga
+                Rp.100.000 </p>
+              <p class="card-text"
+                style="font-size: 8px; margin: 0px; font-weight: bold; color:red; text-align: center;">
+                Harga
+                Rp.25.000 </p>
+              <p class="card-text" style="font-size: 10px; text-align: center; font-weight: bold;  margin: 0px;">
+                Andromeda</p>
+              <div class="row" style="margin-left: 5%;">
+                <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                <div class="col-md1"> <img src="icon/star(1).png" style="width: 10px;" alt=""></div>
+              </div>
+            </div></div></div>
+
+<!--content 2-->
+<div class="container mt-5">
+  <div class="row">
+            <div class="col">
+              <div class="row" style="padding-top: 15px;">
+                <div class="card" style="width: 125px; margin-left: 50px;">
+                  <img src="icon/15.PNG" class="card-img-top" alt="...">
+                  <div class="col-md3 mt-3 ml-3">
+                  <div class="card-body" style="margin: 0%; border: none;">
+                    <p class="card-text"
+                      style="font-size: 8px;  margin: 0px; font-weight: bold; text-decoration: line-through; margin: 0%; text-align: center;">
+                      Harga Rp.100.000 </p>
+                    <p class="card-text"
+                      style="font-size: 8px; margin: 0px; font-weight: bold; color:red; text-align: center;">
+                      Harga
+                      Rp.25.000 </p>
+                    <p class="card-text" style="font-size: 10px; text-align: center; font-weight: bold;  margin: 0px;">
+                      Andromeda</p>
+                    <div class="row" style="margin-left: 5%;" >
+                      <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                      <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                      <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                      <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                      <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                      <div class="col-md1"> <img src="icon/star(1).png" style="width: 10px;" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card" style="width: 125px; margin-left: 50px;">
+                <img src="icon/9.PNG" class="card-img-top" alt="...">
+                <div class="col-md3 mt-3 ml-3">
+                <div class="card-body">
+                  <p class="card-text"
+                    style="font-size: 8px;  margin: 0px; font-weight: bold; text-decoration: line-through; margin: 0%; text-align: center;">
+                    Harga
+                    Rp.100.000 </p>
+                  <p class="card-text"
+                    style="font-size: 8px; margin: 0px; font-weight: bold; color:red; text-align: center;">
+                    Harga
+                    Rp.25.000 </p>
+                  <p class="card-text" style="font-size: 10px; text-align: center; font-weight: bold;  margin: 0px;">
+                    Andromeda</p>
+                  <div class="row" style="margin-left: 5%;">
+                    <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                    <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                    <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                    <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                    <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                    <div class="col-md1"> <img src="icon/star(1).png" style="width: 10px;" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 125px; margin-left: 50px;">
+              <img src="icon/10.PNG" class="card-img-top" alt="...">
+              <div class="col-md3 mt-3 ml-3">
+              <div class="card-body">
+                <p class="card-text"
+                  style="font-size: 8px;  margin: 0px; font-weight: bold; text-decoration: line-through; margin: 0%; text-align: center;">
+                  Harga
+                  Rp.100.000 </p>
+                <p class="card-text"
+                  style="font-size: 8px; margin: 0px; font-weight: bold; color:red; text-align: center;">
+                  Harga
+                  Rp.25.000 </p>
+                <p class="card-text" style="font-size: 10px; text-align: center; font-weight: bold;  margin: 0px;">
+                  Andromeda</p>
+                <div class="row" style="margin-left: 5%;">
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star(1).png" style="width: 10px;" alt=""></div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="card" style="width: 125px; margin-left: 50px;">
+              <img src="icon/11.PNG" class="card-img-top" alt="...">
+              <div class="col-md3 mt-3 ml-3">
+              <div class="card-body">
+                <p class="card-text"
+                  style="font-size: 8px;  margin: 0px; font-weight: bold; text-decoration: line-through; margin: 0%; text-align: center;">
+                  Harga
+                  Rp.100.000 </p>
+                <p class="card-text"
+                  style="font-size: 8px; margin: 0px; font-weight: bold; color:red; text-align: center;">
+                  Harga
+                  Rp.25.000 </p>
+                <p class="card-text" style="font-size: 10px; text-align: center; font-weight: bold;  margin: 0px;">
+                  Andromeda</p>
+                <div class="row" style="margin-left: 5%;">
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star(1).png" style="width: 10px;" alt=""></div>
+                </div>
+              </div>
+            </div>
+            </div>
+  
+            <div class="card" style="width: 125px; margin-left: 50px;">
+              <img src="icon/24.PNG" class="card-img-top" alt="...">
+              <div class="col-md3 mt-3 ml-3">
+              <div class="card-body">
+                <p class="card-text"
+                  style="font-size: 8px;  margin: 0px; font-weight: bold; text-decoration: line-through; margin: 0%; text-align: center;">
+                  Harga
+                  Rp.100.000 </p>
+                <p class="card-text"
+                  style="font-size: 8px; margin: 0px; font-weight: bold; color:red; text-align: center;">
+                  Harga
+                  Rp.25.000 </p>
+                <p class="card-text" style="font-size: 10px; text-align: center; font-weight: bold;  margin: 0px;">
+                  Andromeda</p>
+                <div class="row" style="margin-left: 5%;">
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star(1).png" style="width: 10px;" alt=""></div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="card" style="width: 125px; margin-left: 50px;">
+              <img src="icon/20.PNG" class="card-img-top" alt="...">
+              <div class="col-md3 mt-3 ml-3">
+              <div class="card-body">
+                <p class="card-text"
+                  style="font-size: 8px;  margin: 0px; font-weight: bold; text-decoration: line-through; margin: 0%; text-align: center;">
+                  Harga
+                  Rp.100.000 </p>
+                <p class="card-text"
+                  style="font-size: 8px; margin: 0px; font-weight: bold; color:red; text-align: center;">
+                  Harga
+                  Rp.25.000 </p>
+                <p class="card-text" style="font-size: 10px; text-align: center; font-weight: bold;  margin: 0px;">
+                  Andromeda</p>
+                <div class="row" style="margin-left: 5%;">
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star.png" style="width: 10px;" alt=""></div>
+                  <div class="col-md1"> <img src="icon/star(1).png" style="width: 10px;" alt=""></div>
+                </div>
+              </div>
+
+
+      <!-- Optional JavaScript; choose one of the two! -->
+
+      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+      <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+
+    -->
+      <!-- TIMER -->
+      <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+          // Get today's date and time
+          var now = new Date().getTime();
+
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Output the result in an element with id="demo"
+          document.getElementById("hours").innerHTML = hours + "h";
+          document.getElementById("minute").innerHTML =
+            + minutes + "m";
+          document.getElementById("second").innerHTML = seconds + "s";
+
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+      </script>
+
+
+
+</body>
+
+</html>
