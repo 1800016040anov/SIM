@@ -99,11 +99,25 @@ tr:nth-child(even) {
     margin-left: 5px;
     height: 40px;
 }
-
-
   .footer {
     margin-top: 400px;
 }
+  .navbarDropdown {
+  color: black; 
+  text-decoration: none;
+  position: relative;
+  border-radius: 2px;
+  }
+
+  .navbarDropdown .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color:#EA7808;
+  color: white;
+  }
 
 </style>
 
@@ -115,51 +129,88 @@ tr:nth-child(even) {
 
     <!-- section navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-image: url('img/navground.png');">
-        <img src="icon/logo.png" alt="" style="width: 250px;">
-    
-        <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-    
-    
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false" style="color: aliceblue; margin-top: 30px; margin-left: 15px;">
-                Kategori
-              </a>
-              <div class=" dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Sedih</a>
-                <a class="dropdown-item" href="#">Senang</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Susah</a>
-              </div>
-            </li>
-            <li>
-              <form class="form-inline my-2 my-lg-0" autocomplete="on">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
-                  style="right: 50%; width: 500px;  margin-top: 30px; border-radius: 35px;">
-              </form>
-            </li>
-    
-            <li>
-              <i class="fa-2x far fa-bell" style="margin-top: 35px; margin-left: 15px;"></i>
-            </li>
-            <li>
-              <i class="fa-2x fas fa-shopping-cart" style="margin-top: 35px; margin-left: 15px;"></i>
-            </li>
-    
-            <li
-              style="background-color: aquamarine; height: 50%; border-radius: 5px;padding-left: 20px; padding-right: 20px; margin-left: 40px; margin-top: 35px;">
-              <a href="">login </a>| <a href="">daftar</a>
-            </li>
-          </ul>
-    
-        </div>
-      </nav>
+      <a href="index.html"> <img src="icon/logo.png" alt="" style="width: 250px;"> </a>
+  
+      <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+  
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" style="color: aliceblue; margin-top: 30px; margin-left: 15px;">
+              Kategori
+            </a>
+            <div class=" dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Sedih</a>
+              <a class="dropdown-item" href="#">Senang</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Susah</a>
+            </div>
+          </li>
+          <li>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                style="right: 50%; width: 500px;  margin-top: 30px; border-radius: 35px;">
+            </form>
+          </li>
+  
+          <li>
+            <i class="fa-2x far fa-bell" style="margin-top: 35px; margin-left: 15px;"></i>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style=" margin-top: 30px;">
+            <i class="fa-2x fas fa-shopping-cart" style="margin-top: 35px; margin-left: 15px;"></i>
+            <span class="badge">1</span></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="width: 500%; height:500%;">
+              <table style="margin-left: 30px;">
+                <tr class="wrn">
+                  <td><img src="img/steeve.PNG" style="width:50%; height: 50%; margin-left: 5px;"></td> 
+                </tr>
+                <tr>
+                  <td><span style="font-size: 10pt;">Steeve Job</span></td>
+                </tr>
+                <tr>
+                  <td><span style="font-size: 10pt;"><b>HardCover</b></span></td>
+                </tr>
+                <tr>
+                  <td><span style="text-decoration: line-through red; font-size: 10pt;">Rp68,000.00</span>
+                    <span style="font-size: 10pt;">Rp58,650.00 </span></td>
+                </tr>
+                <tr><td colspan="2">
+                  <button  onclick="window.location.href='belisekarang.html'" style=" box-shadow: 1px 2px grey; font-size: 10pt; background-color:#0DE0CB; color:white; border-radius: 50px; border: none; width: 50%; margin-top: 30px; padding: 5px 5px;">Lihat Keranjang</button>
+                </td></tr></table>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="btn dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" style=" margin-top: 30px; margin-left: 15px;">
+              <i class="fas fa-bars"></i>
+            </a>
+            <div class=" dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Logout</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="koleksibuku.html">Koleksi Buku</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="generate_code.html">Generate code</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="FAQ.html">FAQ</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Kebijakan dan privasi</a>
+            </div>
+  
+  
+          </li>
+  
+        </ul>
+  
+      </div>
+    </nav>
 
 <!--checkout pembayaran-->
 <div class="checkout">

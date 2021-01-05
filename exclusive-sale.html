@@ -36,7 +36,21 @@
   content: "";
   display: table;
 }
-    
+.navbarDropdown {
+color: black;
+text-decoration: none;
+position: relative;
+border-radius: 2px;
+}
+.navbarDropdown .badge {
+position: absolute;
+top: -10px;
+right: -10px;
+padding: 5px 10px;
+border-radius: 50%;
+background-color:#EA7808;
+color: white;
+}
 </style>
 
 <body>
@@ -76,8 +90,30 @@
         <li>
           <i class="fa-2x far fa-bell" style="margin-top: 35px; margin-left: 15px;"></i>
         </li>
-        <li>
+        <li class="nav-item dropdown">
+          <a href="#" class="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" style=" margin-top: 30px;">
           <i class="fa-2x fas fa-shopping-cart" style="margin-top: 35px; margin-left: 15px;"></i>
+          <span class="badge">1</span></a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="width: 500%; height:500%;">
+            <table style="margin-left: 30px;">
+              <tr class="wrn">
+                <td><img src="img/steeve.PNG" style="width:50%; height: 50%; margin-left: 5px;"></td> 
+              </tr>
+              <tr>
+                <td><span style="font-size: 10pt;">Steeve Job</span></td>
+              </tr>
+              <tr>
+                <td><span style="font-size: 10pt;"><b>HardCover</b></span></td>
+              </tr>
+              <tr>
+                <td><span style="text-decoration: line-through red; font-size: 10pt;">Rp68,000.00</span>
+                  <span style="font-size: 10pt;">Rp58,650.00 </span></td>
+              </tr>
+              <tr><td colspan="2">
+                <button  onclick="window.location.href='belisekarang.html'" style=" box-shadow: 1px 2px grey; font-size: 10pt; background-color:#0DE0CB; color:white; border-radius: 50px; border: none; width: 50%; margin-top: 30px; padding: 5px 5px;">Lihat Keranjang</button>
+              </td></tr></table>
+          </div>
         </li>
         <li class="nav-item dropdown">
           <a class="btn dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -138,8 +174,12 @@
           <div class="card" style="width: 150px;">
             <img src="icon/12.PNG" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text" style="font-size: 8px; text-align: center;">Some quick example <br> i'ts oke
-                <br>nevermind
+              <p class="card-text" style="font-size: 8px; text-align: center;">
+                <span style="text-decoration: line-through red;">Rp68,000.00</span>
+                  <span>Rp58,650.00 </span><br>
+                <br>KITA DAN KATA
+                <br> ByJein 
+                <br>@setiyantohendri
               </p>
             </div>
           </div>
@@ -150,8 +190,12 @@
           <div class="card" style="width: 150px;">
             <img src="icon/13.PNG" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text" style="font-size: 8px; text-align: center;">Some quick example <br> i'ts oke
-                <br>nevermind
+              <p class="card-text" style="font-size: 8px; text-align: center;">
+                <span style="text-decoration: line-through red;">Rp78,000.00</span>
+                  <span>Rp60,000.00 </span><br>
+                <br>KITA DAN KATA
+                <br> ByJein 
+                <br>@setiyantohendri
               </p>
             </div>
           </div>
@@ -161,8 +205,12 @@
             <div class="card" style="width: 150px;">
               <img src="img/steeve.PNG" class="card-img-top" alt="...">
               <div class="card-body">
-                <p class="card-text" style="font-size: 8px; text-align: center;">Some quick example <br> i'ts oke
-                  <br>nevermind
+                <p class="card-text" style="font-size: 8px; text-align: center;">
+                  <span style="text-decoration: line-through red;">Rp68,000.00</span>
+                    <span>Rp58,650.00 </span><br>
+                  <br>STEEVE JOB
+                  <br> Byisaac
+                  <br>@isaac walterson
                 </p>
               </div>
             </div>
@@ -173,8 +221,11 @@
           <div class="card" style="width: 150px;">
             <img src="icon/8.PNG" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text" style="font-size: 8px; text-align: center;">Some quick example <br> i'ts oke
-                <br>nevermind
+              <p class="card-text" style="font-size: 8px; text-align: center;">
+                <span style="text-decoration: line-through red;">Rp85,000.00</span>
+                  <span>Rp63,750.00</span><br>
+                <br>RUANG TENGAH INGATAN
+                <br> By Prilly Latuconsina
               </p>
             </div>
           </div>
@@ -184,8 +235,11 @@
           <div class="card" style="width: 150px;">
             <img src="icon/5.PNG" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text" style="font-size: 8px; text-align: center;">Some quick example <br> i'ts oke
-                <br>nevermind
+              <p class="card-text" style="font-size: 8px; text-align: center;">
+                <span style="text-decoration: line-through red;">Rp79,000.00 </span>
+                  <span>Rp67,150.00</span><br>
+                <br>KOMIK DILAN BAGIAN 2
+                <br> By Pidi Baiq
               </p>
             </div>
           </div>
@@ -195,8 +249,11 @@
           <div class="card" style="width: 150px;">
             <img src="icon/7.PNG" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text" style="font-size: 8px; text-align: center;">Some quick example <br> i'ts oke
-                <br>nevermind
+              <p class="card-text" style="font-size: 8px; text-align: center;">
+                <span style="text-decoration: line-through red;">Rp85,000.00 </span>
+                  <span>Rp72,250.00</span><br>
+                <br>SEMOGA LEKAS LEGA
+                <br>By Faisal Syahreza
               </p>
             </div>
           </div>
